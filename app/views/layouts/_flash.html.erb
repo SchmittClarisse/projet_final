@@ -1,0 +1,21 @@
+<% if flash[:notice] %>
+  <div class="container" style="padding-top: 1rem;">
+    <div class="alert alert-success"><%= flash[:notice] %></div>
+  </div>
+<% end %>
+
+<% if flash[:alert] %>
+  <div class="container" style="padding-top: 1rem;">
+    <div class="alert alert-danger"><%= flash[:alert] %></div>
+  </div>
+<% end %>
+
+<% if flash[:message] %>
+  <div class="alert alert-danger">
+    <ul>
+    <% @story.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

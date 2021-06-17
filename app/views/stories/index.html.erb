@@ -1,0 +1,15 @@
+<h1>Stories</h1>
+
+<% @stories.each do |story| %>
+    <p>Image : <%= story.image_url %></p>
+    <h4>Title : <%= story.title %></h4>
+    <p>Content : <%= story.content %><p>
+    <p>Author : <%= story.author %></p>
+    <p>
+        <a href="<%= story_path(story.id) %>" class="btn btn-primary">Show</a>
+    </p>
+<% end %>
+
+<p>
+    <a href="<%= new_story_path %>" class="btn btn-success">New</a>
+</p>

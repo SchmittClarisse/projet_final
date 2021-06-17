@@ -1,0 +1,24 @@
+<h1>New story</h1>
+
+<%= form_with( model:@story, url:stories_path, method: :post, local: true) do |f| %>
+
+  <div class="form-group">
+    <label>Story title</label>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>Story content</label>
+    <%= f.text_area :content, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>Story author</label>
+    <%= f.text_field :author, class: "form-control" %>
+  </div>
+
+  <div class="form-group" style="padding-top: 1rem;">
+    <button type="submit" class="btn btn-primary">New</button>
+  </div>
+  
+<% end %>
