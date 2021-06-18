@@ -16,8 +16,6 @@
             <ul class="dropdown-menu dropdown-menu-white" aria-labelledby="dropdownMenuButton2">
               <li><a class="dropdown-item" href="<%=user_path(current_user.id)%>">About me</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="<%=cart_path(current_user.id)%>">My cart</a></li>
-              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="<%=destroy_user_session_path%>" data-method='delete'>Logout</a></li>
             </ul>
           <% else %>
