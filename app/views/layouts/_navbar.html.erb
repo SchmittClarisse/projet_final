@@ -1,18 +1,38 @@
-<header>
+<!-- Navbar content -->
+<div class="navbar">
+  <div class="container ">
 
-    <%= link_to "Home", root_path %>
+    <a href="/" class="d-flex align-items-right col-md-3 mb-2 mb-md-0 text-white text-decoration-none"></a>
+ 
+    <ul class="nav col-12  mb-2  mb-md-0 ">
+      <li><a href="/" class="btn "><h2><strong> Home </strong></h2></a></li>
+      <div style="padding-left: 22em"><h1>Les Petites Histoires du Soir</h1></div>
 
-    <nav>
+      
 
-        <%= link_to 'All stories', stories_path %>
-        <% if user_signed_in? %>
-            <%= link_to current_user.email, user_path(current_user) %>
-            <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
-        <% else %>
-            <%= link_to 'Login', new_user_session_path %>
-            <%= link_to 'Sign up', new_user_registration_path %>
-        <% end %>
+        <div class="dropdown "style="margin-top: 8px; padding-left:16em;">
+          <% if user_signed_in? %>
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">My account</button>
+            <ul class="dropdown-menu dropdown-menu-white" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="<%=user_path(current_user.id)%>">About me</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="<%=cart_path(current_user.id)%>">My cart</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="<%=destroy_user_session_path%>" data-method='delete'>Logout</a></li>
+            </ul>
+          <% else %>
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Connexion</button>
+            <ul class="dropdown-menu dropdown-menu-white" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="<%=new_user_registration_path%>">Sign up</a></li> 
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="<%=new_user_session_path%>">Login</a></li> 
+            </ul>
+      		<%end%>
+              </div>
+        
+      </div>
+    </ul>
 
-    </nav>
-
-</header>
+    
+  </div>
+</nav>
