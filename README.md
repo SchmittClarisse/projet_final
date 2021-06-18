@@ -1,24 +1,166 @@
-# README
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/SchmittClarisse/projet_final">
+    <img src="app/assets/images/logo_LPHS.png" alt="Logo" width="80" height="80">
+  </a>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  <h3 align="center">Les Petites Histoires du Soir</h3>
 
-Things you may want to cover:
+  <p align="center">
+    Find the tale you need to read the story of the night .. everynight !
+  </p>
+</p>
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+<!-- SUMMARY -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Summary</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#businessModel">Business model</a></li>
+    <li><a href="#customers">Customers</a></li>
+    <li><a href="#expected-results">Expected results over time</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#acknowledgements">Heroku App</a></li>
+  </ol>
+</details>
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-* Services (job queues, cache servers, search engines, etc.)
+Heeeeeello and welcome on the project : Les Petites Histoires du Soir !
 
-* Deployment instructions
 
-* ...
+### Built With
+
+* Ruby:  version ~ '2.7.1'[]()
+* Rails: version ~ '5.2.3' []()
+* HTML:  version ~ HTML5[]()
+* CSS:   version ~ CSS3[]()
+<!-- Optional, to add to S2 (Final version of the project)
+* JavaScript: version ~ '...'[]()
+-->
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Gemfile
+* Do not forget to launch the command line below :
+  ```sh
+  bundle install
+  ```
+
+### Installation
+
+1. Clone the repo :
+   ```sh
+   git clone https://github.com/SchmittClarisse/projet_final.git
+   ```
+2. Create the database :
+   ```sh
+   rails db:create
+   ```
+
+3. Create the migration :
+   ```sh
+   rails db:migrate
+   ```
+
+4. Create the seed :
+   ```sh
+   rails db:seed
+   ```
+
+5. (Optional) Launch on the localhost server :
+   ```sh
+   rails s
+   ```
+
+
+
+<!-- BUSINESS MODEL -->
+## Business model
+
+<!-- INSERT CODE HERE: Business model ! -->
+
+
+
+<!-- CUSTOMERS -->
+## Customers
+
+The aim of this project is to bring ideas to parents who wants to read stories to their children.
+Variety of tales are suggested to every age. 
+
+
+
+<!-- RESULT TO DATE
+## Result to date
+
+<!-- INSERT CODE HERE: Expected results immediatly, do a sort of listing just below. 
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+-->
+
+
+<!-- EXPECTED RESULTS OVER TIME -->
+## Expected results over time (~ three years)
+
+<!-- INSERT CODE HERE: Expected results in the future, do a sort of listing just below. -->
+
+1. 100,000 users created.
+2. 35,000 active users.
+3. $ 75,000 turnover.
+4. Benefits : $ 10,000 benefits with advertising.
+
+
+<!-- THE TEAM -->
+## Team
+
+SCHMITT Clarisse - [https://github.com/SchmittClarisse](https://github.com/SchmittClarisse)</br>
+BOURGOIN Jeremy - [https://github.com/Tepepeka](https://github.com/Tepepeka)</br>
+ORLICKI JB - [https://github.com/JB198203](https://github.com/JB198203)</br>
+BONAFOS Dylan - [https://github.com/DylanB730](https://github.com/DylanB730)</br>
+TORRES Adrien - [https://github.com/Adri-III](https://github.com/Adri-III)</br>
+
+Project Link: [https://github.com/SchmittClarisse/projet_final](https://github.com/SchmittClarisse/projet_final)
+
+
+
+<!-- PRODUCTION LINK TO HEROKU APP -->
+## Production link to Heroku App
+
+Link to Heroku App: [https://les-petites-histoires-du-soir.herokuapp.com/](https://les-petites-histoires-du-soir.herokuapp.com/)
+
+<!-- ANNEXES -->
+## Annexes
+
+* Trello: [https://trello.com/b/4fihwuBF/projet-final-les-petites-histoires](https://trello.com/b/4fihwuBF/projet-final-les-petites-histoires)
+* Figma: [https://www.figma.com/file/p9PD7nYuYfAr9lNTl29nWV/LPHS-THP-x-Twone?node-id=0%3A1](https://www.figma.com/file/p9PD7nYuYfAr9lNTl29nWV/LPHS-THP-x-Twone?node-id=0%3A1)
+* Executive summary (/w Google Drive): [https://docs.google.com/document/d/10IPZTUUGLmWxmI2JoXic350maiQaklgK12S5rU9qkYg/edit?usp=sharing](https://docs.google.com/document/d/10IPZTUUGLmWxmI2JoXic350maiQaklgK12S5rU9qkYg/edit?usp=sharing)
+* User flow (/w Miro): [https://miro.com/app/board/o9J_l-Endg0=/](https://miro.com/app/board/o9J_l-Endg0=/)
