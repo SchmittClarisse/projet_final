@@ -20,15 +20,18 @@
           <%= f.label :password_confirmation %><br />
           <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
         </div>
-        <div class="actions mt-5">
+        
+      
+        <div class="actions mt-5" style="padding-left: 17em">
           <%= f.submit "Sign up", class: "btn btn-lg btn-primary btn-block" %>
         </div>
-        <div class="actions mt-3">
-          <%= f.submit "Sign up /w Facebook", class: "btn btn-lg btn-secondary btn-block" %>
+        <div class="actions mt-3"style="padding-left: 14em">
+          <%= f.submit "Signup /w Facebook", class: "btn btn-lg btn-secondary btn-block" %>
         </div>
         <br>
       <% end %>
-      <%= render "devise/shared/links" %>
+
+    
       </br>
       </br>
     </div>

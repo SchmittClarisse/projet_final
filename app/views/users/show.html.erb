@@ -6,3 +6,19 @@
     <a href="<%= edit_user_path %>" class="btn btn-secondary">Edit</a>
     <a href="<%= root_path %>" class="btn btn-primary">Back</a>
 </p>
+<div class="cardProfile" style="width: 40rem;">
+  <div class="card-body">
+
+    <h3 class="card-title" style="display:flex; justify-content:center"><strong> <%= @user.email %></h3>
+    </br>
+    </br>
+    <h4><strong>Creation date</strong></h4>
+    <p class="card-text"><%= @user.created_at %></p>
+    <hr>
+    </br>
+    <hr>
+    </br>
+    </br>
+
+  </div>
+</div>
