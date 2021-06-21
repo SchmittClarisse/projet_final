@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/SchmittClarisse/projet_final">
-    <img src="app/assets/images/logo_LPHS.png" alt="Logo" width="80" height="80">
+    <img src="app/assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Les Petites Histoires du Soir</h3>
