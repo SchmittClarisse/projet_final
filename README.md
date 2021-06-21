@@ -2,13 +2,16 @@
 <br />
 <p align="center">
   <a href="https://github.com/SchmittClarisse/projet_final">
-    <img src="app/assets/images/logo_LPHS.png" alt="Logo" width="80" height="80">
+    <img src="app/assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Les Petites Histoires du Soir</h3>
 
   <p align="center">
-    Find the tale you need to read the story of the night .. everynight !
+    Find the tale you need to read the story of the night ... everynight !
+  </p>
+  <p align="center">
+    Final Version (S-2)
   </p>
 </p>
 
@@ -115,23 +118,10 @@ Variety of tales are suggested to every age.
 
 
 
-<!-- RESULT TO DATE
-## Result to date
-
-<!-- INSERT CODE HERE: Expected results immediatly, do a sort of listing just below. 
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
--->
-
-
 <!-- EXPECTED RESULTS OVER TIME -->
 ## Expected results over time (~ three years)
 
-<!-- INSERT CODE HERE: Expected results in the future, do a sort of listing just below. -->
+Expected results in the future, there is a exhausting list just below.
 
 1. 100,000 users created.
 2. 35,000 active users.
@@ -143,7 +133,6 @@ Variety of tales are suggested to every age.
 ## Team
 
 SCHMITT Clarisse - [https://github.com/SchmittClarisse](https://github.com/SchmittClarisse)</br>
-BOURGOIN Jeremy - [https://github.com/Tepepeka](https://github.com/Tepepeka)</br>
 ORLICKI JB - [https://github.com/JB198203](https://github.com/JB198203)</br>
 BONAFOS Dylan - [https://github.com/DylanB730](https://github.com/DylanB730)</br>
 TORRES Adrien - [https://github.com/Adri-III](https://github.com/Adri-III)</br>
@@ -164,3 +153,4 @@ Link to Heroku App: [https://les-petites-histoires-du-soir.herokuapp.com/](https
 * Figma: [https://www.figma.com/file/p9PD7nYuYfAr9lNTl29nWV/LPHS-THP-x-Twone?node-id=0%3A1](https://www.figma.com/file/p9PD7nYuYfAr9lNTl29nWV/LPHS-THP-x-Twone?node-id=0%3A1)
 * Executive summary (/w Google Drive): [https://docs.google.com/document/d/10IPZTUUGLmWxmI2JoXic350maiQaklgK12S5rU9qkYg/edit?usp=sharing](https://docs.google.com/document/d/10IPZTUUGLmWxmI2JoXic350maiQaklgK12S5rU9qkYg/edit?usp=sharing)
 * User flow (/w Miro): [https://miro.com/app/board/o9J_l-Endg0=/](https://miro.com/app/board/o9J_l-Endg0=/)
+* Repo GitHub (V.1): [https://github.com/Tepepeka/projet_final](https://github.com/Tepepeka/projet_final)
