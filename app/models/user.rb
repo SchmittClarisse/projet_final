@@ -31,5 +31,6 @@ class User < ApplicationRecord
   #format: { with: /\A[a-z ,.'-,0-9]+\z/, message: "Please enter a valid format" }
 
   has_many :stories
+  has_many :likes
   
 end

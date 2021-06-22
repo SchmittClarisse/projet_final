@@ -15,5 +15,6 @@ class Story < ApplicationRecord
     length: { in: 3..30, message: "mini:3, maxi:30" }
 
     belongs_to :user
+    has_many :likes
     
 end
