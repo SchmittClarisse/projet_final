@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 }
 
   root to: "stories#index"
-  resources :stories
+  resources :stories do
+    resources :likes
+  end
   resources :users
     
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

@@ -6,7 +6,7 @@
 <hr>
 <br>
 <h1>Stories</h1>
-  <center><h1>Choisir son Histoires du Soir</h1></center>
+  <center><h1>Choisir son Histoire du Soir</h1></center>
 <div class='containerfluid row ml-2 mr-2 d-flex justify-content-around gx-0 mb-5'>
 
 <% @stories.each do |story| %>
@@ -20,6 +20,33 @@
             <p class="card-text-scrollbar"><%= story.content %></p>
 
             <%= link_to "Show", story_path(story), class: "btn btn-card" %>
+
+
+            <!-- Si utilisateur connecté-->
+            <% if current_user %>
+
+                <!-- Si déjà liké unlike dispo-->
+                <% if story.likes.where(user: current_user, story: story).count != 0 %>
+
+                    <a href=<%=story_like_path(controller: :likes, action: :destroy, story_id: story.id,id: story.likes.where(user: current_user, story: story)[0].id)%> data-method='delete'><p ><i class="fa fa-heart" style="color:red"></i>  
+                    <%=story.likes.size%></p></a>
+
+                <!-- sinon like dispo-->
+                <%else%>
+
+                    <a href=<%=story_likes_path(controller: :likes, action: :create, story_id: story.id)%> data-method='post'><p><i class="fa fa-heart" style="color:green"></i>  
+                    <%=story.likes.size%></p></a>
+
+                <%end%>  
+
+            <!-- sinon pas de lien-->
+            <%else%>
+
+                <p><i class="fa fa-heart" style="color:grey"></i>  
+                <%=story.likes.size%></p></a>
+
+            <%end%>
+
         </div>
     </div>
     
