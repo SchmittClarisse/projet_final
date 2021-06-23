@@ -12,9 +12,11 @@ Story.destroy_all
 
 2.times do |i|
   User.create(
-    email:  Faker::Internet.email,
+    email: Faker::Internet.email,
     password: "azerty",
     password_confirmation: "azerty"
+    # name: Faker::Name.name,
+    # description: Faker::Lorem.paragraph(sentence_count: 2)
   )
   puts "#{i} user(s) created"
   puts "*"*(i+1)

@@ -1,6 +1,8 @@
 <h1>User info</h1>
 
+<h2>Hi, <%= @user.name %></h2>
 <p>my email is : <%= @user.email %></p>
+<p>description : <%= @user.description %></p>
 
 <p>
     <a href="<%= edit_user_path %>" class="btn btn-secondary">Edit</a>
