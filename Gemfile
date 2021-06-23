@@ -6,6 +6,7 @@ ruby '2.7.1'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem "omniauth-rails_csrf_protection"
 
 gem 'faker'
 
