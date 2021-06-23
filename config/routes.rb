@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
 
-  devise_for :users, controllers: {
-  omniauth_callbacks: 'users/omniauth_callbacks'
-}
+  devise_for :users, controllers: {omniauth_callbacks: 'users/omniauth_callbacks'}
 
   root to: "stories#index"
   resources :stories do
-    resources :likes
+  resources :likes
   end
   resources :users
-    
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
