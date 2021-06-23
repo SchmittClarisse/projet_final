@@ -106,7 +106,7 @@ Gemfile
 <!-- BUSINESS MODEL -->
 ## Business model
 
-Le business model de l'entreprise en cinq points.
+
  
 1- Le business model est nécessaire pour toutes les entreprises:
 Toute entreprise, quelle que soit sa taille ou son activité, met en oeuvre un business model (modèle d'affaires). En effet, c'est la description générale de votre projet qui explique comment l’entreprise va créer de la valeur pour le client (quelle offre et quels avantages pour le client et pour quel client), délivrer cette valeur (distribution, communication, relation-clients...) et capturer de la valeur en retour (quelle rentabilité financière, quelle notoriété...).
@@ -116,24 +116,6 @@ Même si vous êtes une "start-up" (entreprise dont le business model n'est pas 
  
 2- Ne pas construire le business model sans une analyse plus large
 Le business Model se définit après avoir analysé le contexte de votre future entreprise et après avoir posé la mission, vision et stratégie de la future entreprise. En effet, les tendances sont particulièrement importantes car elles peuvent influer sur votre vision, stratégie et donc sur votre business model.
-
-
-3- Le business model est différent du business plan !
-Le business model ne remplace pas le business plan :
-
-le Business Model décrit les liens logiques entre l'offre (la proposition de valeur), les clients, les revenus…
-
-Le Business Plan explique la mise en œuvre opérationnelle et stratégique de cette logique.
- 
-
-4- Pour construire votre business model, servez-vous du business model canvas
-Le business model canvas, outil qui permet de travailler sur le business model, est adapté à tout type d'entreprise (de la plus petite à la plus grande) et à toutes les activités (du commerce ambulant à l'entreprise numérique).
-
-Si vous lancez une innovation de produit, le Lean canvas peut vous sembler plus simple. L'outil vous permet de vérifier la cohérence entre ce que vous vendez et pourquoi, à qui vous le vendez, comment vous le vendez, avec qui vous le vendez et combien vous le vendez. Et, éventuellement, trouver des innovations.
-
-
-5- Ne travaillez pas seul(e) !
-Il est fortement recommandé de ne pas travailler seul(e) sur son business model : participez à des ateliers, travaillez en équipe... Challengez le fruit de vos réflexions avec un tiers qui portera un regard neutre sur votre travail et vous aidera à le regarder sous d'autres angles pour, éventuellement, identifier des innovations qui vous démarqueront plus de vos concurrents.
 
 
 
