@@ -26,12 +26,12 @@
           <%= f.submit "Sign up", class: "btn btn-lg btn-primary btn-block" %>
         </div>
         <div class="actions mt-3"style="padding-left: 14em">
-          <%= f.submit "Signup /w Facebook", class: "btn btn-lg btn-secondary btn-block" %>
+        <%= link_to "Signup /w Facebook", user_facebook_omniauth_authorize_path, class:  "btn btn-lg btn-secondary btn-block" %>
         </div>
         <br>
       <% end %>
 
-    
+      
       </br>
       </br>
     </div>
