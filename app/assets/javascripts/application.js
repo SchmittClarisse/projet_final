@@ -375,3 +375,14 @@ function update_tiny(i) {
     tiny[i].style.visibility = "hidden";
     return false
 }
+
+//if read is grey
+
+var card-body = document.getElementById('card-body');
+var editFonct3 = document.getElementById('editFonct3');
+
+editFonct3.addEventListener('click', changeColor);
+
+function changeColor() {
+  textFonct3.style.color = 'red';
+}
