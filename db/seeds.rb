@@ -23,7 +23,7 @@ Story.destroy_all
 end
 
 
-5.times do |i|
+8.times do |i|
   Story.create(
     title:       Faker::Book.title,
     content:     Faker::Books::Lovecraft.paragraph(sentence_count: 7),
