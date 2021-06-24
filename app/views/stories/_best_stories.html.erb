@@ -1,5 +1,4 @@
 <div class="container text-align">
-    <h2><u>Best stories</u></h2>
 
         <% @stories.sort{|a,b| b.likes.size <=> a.likes.size}.first(3).each do |story| %>
 
@@ -8,3 +7,4 @@
         <% end %>
 
 </div>
+<hr>
