@@ -27,7 +27,6 @@
                     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
                 }
                 
-                
                 body {
                     margin: 0;
                     /*font-family: var(--bs-font-sans-serif);*/
@@ -127,41 +126,43 @@
                     text-align: right;
                     padding-right: 20px;
                 }
-
+                
                 .btn-outline-primary {
                     color: #8076E9;
                     background-color: none;
                     border-color: #8076E9;
-                  }
-                  
-                  .btn-outline-primary:hover{
+                }
+                
+                .btn-outline-primary:hover {
                     color: #F5EED8;
                     background-color: #8076E9;
                     border-color: #8076E9;
-                  }
-                  
-                  .card {
+                }
+                
+                .card {
                     background-color: #8076E9;
-                  
-                  }
-                  
-                  .btn-card{
+                }
+                
+                .btn-card {
                     color: #F0EBCE;
                     background-color: #8076E9;
                     border-color: #F0EBCE;
-                  
-                  }
-                  
-                  .btn-card:hover{
+                }
+                
+                .btn-card:hover {
                     color: #8076e9;
                     background-color: #F0EBCE;
                     border-color: #8076E9;
-                  }
-
-                  .card-text-scrollbar {
-                      padding-left: 5px;
-                      width: 430px;
-                      height: 90px;
-                      overflow-y: scroll;
-                  }
-                  
+                }
+                
+                .card-text-scrollbar {
+                    padding-left: 5px;
+                    width: 430px;
+                    height: 90px;
+                    overflow-y: scroll;
+                }
+                
+                .image {
+                    width: 40px;
+                    height: 40px;
+                }

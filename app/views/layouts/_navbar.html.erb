@@ -1,15 +1,9 @@
 <!-- Navbar content -->
 <div class="navbar">
   <div class="container ">
-
-    
- 
     <ul class="nav col-12  mb-2" style="display:flex; justify-content:space-around; ">
       <li><a href="/" class="btn "><h2><strong> Home </strong></h2></a></li>
       <div ><h1>Les Petites Histoires du Soir</h1></div>
-
-      
-
         <div class="dropdown "style="margin-top: 8px; ">
           <% if user_signed_in? %>
             <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">My account</button>
@@ -25,13 +19,9 @@
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="<%=new_user_session_path%>">Login</a></li> 
             </ul>
-              <%end%>
-              </div>
-        
+          <%end%>
+        </div>    
       </div>
     </ul>
-
-    
   </div>
-</div>
 </div>
