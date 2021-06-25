@@ -8,7 +8,7 @@
           <% if user_signed_in? %>
             <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Mon Compte</button>
             <ul class="dropdown-menu dropdown-menu-white" aria-labelledby="dropdownMenuButton2" >
-              <li><a class="dropdown-item" href="<%=user_path(current_user.id)%>">Profile</a></li>
+              <li><a class="dropdown-item" href="<%=user_path(current_user.id)%>">Profil</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="<%=destroy_user_session_path%>" data-method='delete'>Déconnexion</a></li>
             </ul>
