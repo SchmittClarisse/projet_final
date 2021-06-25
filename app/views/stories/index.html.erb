@@ -1,58 +1,45 @@
 <%= render 'layouts/banner' %>
-<hr>
 <br>
 <center>
-  <h1>Top Tandence</h1>
+  <h1>Top Tendance</h1>
   <%= render "best_stories" %>
 </center>
-<%= link_to "Créer une histoire", new_story_path, class: "btn btn-card" %>
 
+<br/><br/><br/>
+
+<center><%= link_to "Créer une histoire", new_story_path, class: "btn btn-card" %></center>
+
+<br/>
 <h3 class="text-center">Toutes les Histoires</h3>
+
 <br>
-  <center><h1>Choisir son Histoire du Soir</h1></center>
+<center><h1>Choisir son Histoire du Soir</h1></center>
 <div class='containerfluid row ml-2 mr-2 d-flex justify-content-around gx-0 mb-5'>
-
   <% @stories.each do |story| %>
-    
-    
-  <div class="card m-4" style="width: 30rem; ">
-    <center><h1 class="card-title"><%= story.title %></h1></center>
-    <%= image_tag ("harry_potter.jpg") %>
-    <div class="card-body">
-      
-      <p class="card-text-scrollbar"><%= story.content %></p>
+    <div class="card m-4" style="width: 30rem; ">
+      <center><h1 class="card-title"><%= story.title %></h1></center>
+      <%= image_tag ("harry_potter.jpg") %>
+      <div class="card-body">
+        <p class="card-text-scrollbar"><%= story.content %></p>
+        <%= link_to "Lire", story_path(story), class: "btn btn-card" %>
+        <!-- If user connected -->
+        <% if current_user %>
 
-      <%= link_to "Lire", story_path(story), class: "btn btn-card" %>
-
-
-      <!-- Si utilisateur connecté-->
-      <% if current_user %>
-
-      <!-- Si déjà liké unlike dispo-->
-      <% if story.likes.where(user: current_user, story: story).count != 0 %>
-
-        <a href=<%=story_like_path(controller: :likes, action: :destroy, story_id: story.id,id: story.likes.where(user: current_user, story: story)[0].id)%> data-method='delete'><p ><i class="fa fa-heart" style="color:red"></i>  
-        <%=story.likes.size%></p></a>
-
-      <!-- sinon like dispo-->
-      <%else%>
-
-        <a href=<%=story_likes_path(controller: :likes, action: :create, story_id: story.id)%> data-method='post'><p><i class="fa fa-heart" style="color:green"></i>  
-        <%=story.likes.size%></p></a>
-
-      <%end%>  
-
-      <!-- sinon pas de lien-->
-      <%else%>
-
-        <p><i class="fa fa-heart" style="color:grey"></i>  
-        <%=story.likes.size%></p></a>
-
-      <%end%>
-
+        <!-- If already liked, unlike available -->
+        <% if story.likes.where(user: current_user, story: story).count != 0 %>
+          <a href=<%=story_like_path(controller: :likes, action: :destroy, story_id: story.id,id: story.likes.where(user: current_user, story: story)[0].id)%> data-method='delete'><p ><i class="fa fa-heart" style="color:red"></i>
+          <%=story.likes.size%></p></a>
+        <!-- Else like available -->
+        <%else%>
+          <a href=<%=story_likes_path(controller: :likes, action: :create, story_id: story.id)%> data-method='post'><p><i class="fa fa-heart" style="color:green"></i>
+          <%=story.likes.size%></p></a>
+        <%end%>
+        <!-- Else no link -->
+        <%else%>
+          <p><i class="fa fa-heart" style="color:grey"></i>
+          <%=story.likes.size%></p></a>
+        <%end%>
+      </div>
     </div>
-  </div>
-    
-    <% end %>
-    
+  <% end %>
 </div>

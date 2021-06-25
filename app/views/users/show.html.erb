@@ -1,26 +1,29 @@
-<h1>User info</h1>
+<div class="cardoo">
+  <center><h2><%= @user.name %></h2></center>
+  <div class="textouser">
+    <p>
+      <strong>Avatar</strong>
+      <%= image_tag(@user.avatar) if @user.avatar.attached? %>
+    </p>
 
-<h2>Hi, <%= @user.name %></h2>
-<p>my email is : <%= @user.email %></p>
-<p>description : <%= @user.description %></p>
-
-<p>
-    <a href="<%= edit_user_path %>" class="btn btn-secondary">Edit</a>
-    <a href="<%= root_path %>" class="btn btn-primary">Back</a>
-</p>
-<div class="cardProfile" style="width: 40rem;">
-  <div class="card-body">
-
-    <h3 class="card-title" style="display:flex; justify-content:center"><strong> <%= @user.email %></h3>
-    </br>
-    </br>
-    <h4><strong>Creation date</strong></h4>
-    <p class="card-text"><%= @user.created_at %></p>
-    <hr>
-    </br>
-    <hr>
-    </br>
-    </br>
-
+    <div >
+      <p>description : <%= @user.description %></p>
+        <p>
+          <a href="<%= edit_user_path %>" class="btn btn-secondary">Edit</a>
+          <a href="<%= root_path %>" class="btn btn-primary">Back</a>
+        </p>
+        <div class="cardProfile" style="width: 40rem;">
+          <div class="card-body">
+            <%= @user.email %>
+            </br>
+            </br>
+            <h4><strong>Creation date</strong></h4>
+              <p class="card-text"><%= @user.created_at %></p>
+          </div>
+          <div>
+            <%= image_tag(@user.avatar) if @user.avatar.attached? %>
+          </div>
+        </div >
+    </div>
   </div>
 </div>
