@@ -2,22 +2,22 @@
 <div class="navbar">
   <div class="container ">
     <ul class="nav col-12  mb-2" style="display:flex; justify-content:space-around; ">
-      <li><a href="/" class="btn "><h2><strong> Home </strong></h2></a></li>
+      <li><a href="/" class="btn "><h2><strong> Accueil </strong></h2></a></li>
       <div ><h1>Les Petites Histoires du Soir</h1></div>
         <div class="dropdown "style="margin-top: 8px; ">
           <% if user_signed_in? %>
-            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">My account</button>
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Mon Compte</button>
             <ul class="dropdown-menu dropdown-menu-white" aria-labelledby="dropdownMenuButton2" >
-              <li><a class="dropdown-item" href="<%=user_path(current_user.id)%>">About me</a></li>
+              <li><a class="dropdown-item" href="<%=user_path(current_user.id)%>">Profile</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="<%=destroy_user_session_path%>" data-method='delete'>Logout</a></li>
+              <li><a class="dropdown-item" href="<%=destroy_user_session_path%>" data-method='delete'>Déconnexion</a></li>
             </ul>
           <% else %>
             <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Connexion</button>
             <ul class="dropdown-menu dropdown-menu-white" aria-labelledby="dropdownMenuButton2"style="border-style:solid; border-color:yellow">
-              <li><a class="dropdown-item" href="<%=new_user_registration_path%>">Sign up</a></li> 
+              <li><a class="dropdown-item" href="<%=new_user_registration_path%>">Créer un Compte</a></li> 
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="<%=new_user_session_path%>">Login</a></li> 
+              <li><a class="dropdown-item" href="<%=new_user_session_path%>">Se Connecter</a></li> 
             </ul>
           <%end%>
         </div>    
