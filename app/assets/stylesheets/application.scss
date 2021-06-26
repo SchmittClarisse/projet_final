@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Viaoda Libre:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+@import 'show';
+
+body {
+  margin: 0;
+  font-family: Baloo Tammudu 2;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #F5EED8;
+  background-image: url("newnight.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: Viaoda Libre, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #F5EED8;
+}
+
+.btn-primary {
+  color: #F5EED8;
+  background-color: #8076E9;
+  border-color: #8076E9;
+}
+
+.btn-primary:hover {
+  color: #8076E9;
+  background-color: #0E1544;
+  border-color: #8076E9;
+}
+
+.btn-primary:visited {
+  color: #8076E9;
+  background-color: #0E1544;
+  border-color: #8076E9;
+}
+
+.btn-secondary {
+  color: #8076E9;
+  background-color: #0E1544;
+  border-color: #8076E9;
+}
+
+.btn-secondary:hover {
+  color: #F5EED8;
+  background-color: #8076E9;
+  border-color: #8076E9;
+}
+
+.btn-secondary:visited {
+  color: #8076E9;
+  background-color: #0E1544;
+  border-color: #8076E9;
+}
+
+.a {
+  color: #8076E9;
+}
+
+.jumbotron1-hero {
+  background-image: url("1624.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: #f9fd00;
+  border-style: solid;
+  .containerMain {
+    text-align: right;
+    padding-right: 20px;
+  }
+  center > h4 {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #8076E9;
+    border-radius: 10px;
+    padding: 5px;
+    width: 98%;
+  }
+}
+
+.jumbotron2-hero {
+  max-height: 250px;
+  width: 100%;
+  background-image: url("footernight.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  padding-right: 20px;
+  bottom: 0;
+}
+
+.btn-outline-primary {
+  color: #8076E9;
+  background-color: none;
+  border-color: #8076E9;
+}
+
+.btn-outline-primary:hover {
+  color: #F5EED8;
+  background-color: #8076E9;
+  border-color: #8076E9;
+}
+
+.card {
+  background-color: #8076E9;
+}
+
+.btn-card {
+  color: #F0EBCE;
+  background-color: #8076E9;
+  border-color: #F0EBCE;
+}
+
+.btn-card:hover {
+  color: #8076e9;
+  background-color: #F0EBCE;
+  border-color: #8076E9;
+}
+
+.card-text-scrollbar {
+  padding-left: 5px;
+  max-width: 430px;
+  height: 90px;
+  overflow-y: scroll;
+}
+
+.magbox {
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+}
+
+.boxy {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardoo {
+  background-color: #8076E9;
+  border-color: yellow;
+  border-style: solid;
+}
+
+.card-profile {
+  padding: 1.25rem;
+}  
+
+// RESPONSIVENESS
+@media all and (max-width: 600px) {
+  center > h4 {
+    font-size: 0.9375rem;
+  }
+  h1.card-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media all and (max-width: 350px) {
+  center > h4 {
+    font-size: 0.8125rem;
+  }
+  h1.card-title {
+    font-size: 1rem;
+  }
+}

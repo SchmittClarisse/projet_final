@@ -1,21 +1,19 @@
 <div class="cardoo">
-  <center><h2><%= @user.name %></h2></center>
-  <div class="textouser">
-    <div >
-      <p>description : <%= @user.description %></p>
-        <p>
-          <a href="<%= edit_user_path %>" class="btn btn-secondary">Edit</a>
-          <a href="<%= root_path %>" class="btn btn-primary">Back</a>
-        </p>
-        <div class="cardProfile" style="width: 40rem;">
-          <div class="card-body">
-            <%= @user.email %>
-            </br>
-            </br>
-            <h4><strong>Creation date</strong></h4>
-              <p class="card-text"><%= @user.created_at %></p>
-          </div>
-        </div >
-    </div>
+  <center><h2>Bonjour <%= @user.name %> !</h2></center>
+  <div class="card-profile">
+    <h4><strong>Description</strong></h4>
+    <%= @user.description %>
+    </br>
+    </br>
+    <h4><strong>Email</strong></h4>
+    <%= @user.email %>
+    </br>
+    </br>
+    <h4><strong>Date de création du compte</strong></h4>
+    <p class="card-text"><%= @user.created_at.strftime('%d/%m/%Y') %></p>
+    <div>
+      <a href="<%= edit_user_path %>" class="btn btn-secondary">Edit</a>
+      <a href="<%= root_path %>" class="btn btn-primary">Back</a>
+    </div> 
   </div>
 </div>
