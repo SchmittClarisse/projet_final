@@ -141,11 +141,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-.image {
-  width: 40px;
-  height: 40px;
-}
-
 .boxy {
   display: flex;
   justify-content: space-evenly;
@@ -161,7 +156,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.25rem;
 }  
 
+.image-show {
+  width: 15.75rem;
+  height: 14.625rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // RESPONSIVENESS
+@media all and (max-width: 800px) {
+  .image-show {
+    width: 11.75rem;
+    height: 9.625rem;
+  }
+}
+
 @media all and (max-width: 600px) {
   center > h4 {
     font-size: 0.9375rem;
